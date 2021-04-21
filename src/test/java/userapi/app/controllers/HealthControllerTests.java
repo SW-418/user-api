@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class HealthControllerTests {
     @Autowired
     private MockMvc mvc;
-    
+
     @Test
     public void healthCheckReturnsOkResponse() throws Exception {
         RequestBuilder requestBuilder = MockMvcRequestBuilders.get(
