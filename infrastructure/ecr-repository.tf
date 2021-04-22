@@ -11,7 +11,7 @@ resource "aws_ecr_lifecycle_policy" "create-repository-policy" {
     "rules": [
         {
             "rulePriority": 1,
-            "description": "Expire images older than 14 days",
+            "description": "Expire images outside of image count",
             "selection": {
                 "tagStatus": "any",
                 "countType": "imageCountMoreThan",
