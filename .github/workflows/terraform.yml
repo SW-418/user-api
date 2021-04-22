@@ -1,4 +1,5 @@
-name: 'Terraform'
+# This workflow will build validate and deploy infrastructure using Terraform
+name: Validate and Deploy Infrastructure
 
 on:
   push:
