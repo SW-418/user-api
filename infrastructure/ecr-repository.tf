@@ -15,7 +15,7 @@ resource "aws_ecr_lifecycle_policy" "create-repository-policy" {
             "selection": {
                 "tagStatus": "any",
                 "countType": "imageCountMoreThan",
-                "countNumber": 14
+                "countNumber": 3
             },
             "action": {
                 "type": "expire"
